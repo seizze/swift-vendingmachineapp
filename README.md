@@ -2,7 +2,11 @@
 
 자판기 앱 저장소
 
+![step3_result](step3_result.png)
+
 ## STEP1. 음료수 클래스 설계
+
+> [PR #199 Step1 음료수 클래스 설계][pr-step1]
 
 * 클래스 Beverage와 이를 상속한 Milk, SoftDrink, Coffee 구현
 * 벤딩머신 클래스 구현 및 fill, stockList 기능 추가
@@ -23,6 +27,8 @@
 ![step1_result](step1_result.png)
 
 ## STEP2. 자판기 기본 동작
+
+> [PR #204 Step2 자판기 기본 동작][pr-step2]
 
 * 음료수 클래스 계층을 3단계로 구분.
     * Milk 클래스 구현, 초코/딸기우유를 Milk를 상속하도록 변경
@@ -63,6 +69,8 @@
 
 ## STEP3. 자판기 화면 구성
 
+> [PR #213 Step3 자판기 화면 구성][pr-step3]
+
 * 음료수 이미지들 추가
 * 스토리보드로 화면 구성
 * IBOutlet, IBOutletCollection등을 이용하여 스토리보드와 코드 연결
@@ -87,6 +95,8 @@
 
 ### 더 개선한 내용
 
+> [PR #221 Step3.1 View와 ViewController 간 역할 분담 개선][pr-step3.1]
+
 * 뷰 초기화 시점에 버튼마다 다른 동작을 넣어놓기 위해 딕셔너리 이용
 * BeverageButton의 switch 비교 구문은 삭제
 * BalanceButton과 BeverageLabel에도 적용
@@ -98,3 +108,8 @@
 
 ![step3_result](step3_result.png)
 
+
+[pr-step1]: https://github.com/code-squad/swift-vendingmachineapp/pull/199
+[pr-step2]: https://github.com/code-squad/swift-vendingmachineapp/pull/204
+[pr-step3]: https://github.com/code-squad/swift-vendingmachineapp/pull/213
+[pr-step3.1]: https://github.com/code-squad/swift-vendingmachineapp/pull/221
